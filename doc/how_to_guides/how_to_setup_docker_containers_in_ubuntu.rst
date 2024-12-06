@@ -31,7 +31,7 @@ Steps
 
    .. code-block:: bash
 
-    DOCKER_IMAGE={DISTRO}-tutorial docker compose run --rm --name moveit2_container gpu
+    DOCKER_IMAGE=main-{DISTRO}-tutorial-source docker compose run --rm --name moveit2_container gpu
 
    You can replace ``{DISTRO}-tutorial`` with other tagged images, e.g. ``rolling-tutorial``. Similarly, you can replace ``gpu`` with ``cpu`` if you do not wish to run using Nvidia GPU drivers and you can change the name of the container by replacing ``moveit2_container``. The ``--rm`` argument will remove the container when you stop (or exit) it, otherwise you can keep your modified container on disk and start it using ``docker start moveit2_container``
 
